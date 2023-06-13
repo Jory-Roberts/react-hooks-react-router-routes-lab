@@ -7,7 +7,12 @@ import Directors from './Directors';
 import Movies from './Movies';
 
 function App() {
-  return <div>{<Actors />}</div>;
+  return (
+    <div>
+      <Actors />
+      <Directors />
+    </div>
+  );
 }
 
 export default App;
