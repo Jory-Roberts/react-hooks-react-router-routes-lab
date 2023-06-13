@@ -12,6 +12,7 @@ function App() {
       <Actors />
       <Directors />
       <Movies />
+      <Home />
     </div>
   );
 }
