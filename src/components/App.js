@@ -9,10 +9,29 @@ import Movies from './Movies';
 function App() {
   return (
     <div>
-      <Actors />
-      <Directors />
-      <Movies />
-      <Home />
+      <NavBar />
+      <Switch>
+        <Route
+          exact
+          path='/actors'
+          component={Actors}
+        />
+        <Route
+          exact
+          path='/directors'
+          component={Directors}
+        />
+        <Route
+          exact
+          path='/movies'
+          component={Movies}
+        />
+        <Route
+          exact
+          path='/'
+          component={Home}
+        />
+      </Switch>
     </div>
   );
 }
